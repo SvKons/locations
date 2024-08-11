@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
+        <title>Локации</title>
+    </head>
+    <body>
+        <div class="page">
+            <header class="header">
+                <div class="header__container container">
+                    <div class="header__menu-left">
+                        <img src="img/icon-tie.png" class="header__icon" alt="Иконка гастулка" />
+                        <span class="header__version">v 2.01</span>
+                    </div>
+                    <a href="#" class="header__exit">
+                        <img src="img/icon-exit.png" class="header__icon-exit" alt="Иконка выхода" />
+                    </a>
+                </div>
+            </header>
+
+            <main class="main">
+                <section class="locations">
+                    <div class="aside">
+                        <div class="aside__menu">
+                            <a href="#" class="aside__item">
+                                <img src="img/icon-property.png" alt="Иконка Имущество" class="aside__icon" />
+                                <span class="aside__text">Имущество</span>
+                            </a>
+                            <a href="#" class="aside__item">
+                                <img src="img/icon-inventory.png" alt="Иконка Инвентаризация" class="aside__icon" />
+                                <span class="aside__text">Инвентаризация</span>
+                            </a>
+                            <a href="#" class="aside__item">
+                                <img src="img/icon-employees.png" alt="Иконка Сотрудники" class="aside__icon" />
+                                <span class="aside__text">Сотрудники</span>
+                            </a>
+                            <a href="#" class="aside__item">
+                                <img src="img/icon-notifications.png" alt="Иконка Уведомления" class="aside__icon" />
+                                <span class="aside__text">Уведомления</span>
+                            </a>
+                            <a href="index.html" class="aside__item">
+                                <img src="img/icon-location.png" alt="Иконка Локации" class="aside__icon" />
+                                <span class="aside__text">Локации</span>
+                            </a>
+                            <a href="settings.html" class="aside__item aside__item_active">
+                                <img src="img/icon-settings.png" alt="Иконка Настройки" class="aside__icon" />
+                                <span class="aside__text aside__text_active">Настройки</span>
+                            </a>
+                        </div>
+                        <button class="aside__close-menu">
+                            <img src="img/icon-arrow.png" alt="Иконка Настройки" class="aside__icon aside__icon_arrow" />
+                            <span class="aside__text_button aside__close-menu_text">Скрыть меню</span>
+                        </button>
+                    </div>
+
+                    <div class="main-content">
+                        <h1 class="main-content__title">Локации / Все локации</h1>
+                        <div class="menu-top">
+                            <div class="menu-top__list">
+                                <button class="menu-top__item">Имущество</button>
+                                <button class="menu-top__item">Инвентаризация</button>
+                                <button class="menu-top__item">Сотрудники</button>
+                                <button class="menu-top__item menu-top__item_active">Локации</button>
+                                <button class="menu-top__item">Уведомления</button>
+                                <button class="menu-top__item">Справочники</button>
+                                <button class="menu-top__item">Пользователь</button>
+                            </div>
+                        </div>
+
+                        <div class="table">
+                            <h2 class="table__title">Настройка полей таблицы</h2>
+                            <table class="table__main">
+                                <thead class="table__head">
+                                    <tr class="table__top-text">
+                                        <th>&nbsp;</th>
+                                        <th scope="col">Описание</th>
+                                        <th scope="col">Сортировка</th>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Тип поля</th>
+                                        <th scope="col">Выводить в таблицу</th>
+                                        <th scope="col">Обязательно</th>
+                                        <th scope="col">Удалить</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table__body">
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Название</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td><img src="img/icon-help.png" alt="Описание картинки" class="table__img" /></td>
+                                        <td>
+                                            <span class="table__sort">500</span>
+                                        </td>
+                                        <td>1001</td>
+                                        <td>Строка</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Цена</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">510</span>
+                                        </td>
+                                        <td>1002</td>
+                                        <td>Число</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>МОЛ</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">520</span>
+                                        </td>
+                                        <td>1003</td>
+                                        <td class="table__directory">
+                                            <span>Справочник</span>
+                                            <img src="img/icon-directory.png" alt="Иконка карандаша" />
+                                        </td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Фото</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">530</span>
+                                        </td>
+                                        <td>1004</td>
+                                        <td>Файл</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Цвет</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">540</span>
+                                        </td>
+                                        <td>1005</td>
+                                        <td>Строка</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Локация</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">550</span>
+                                        </td>
+                                        <td>1006</td>
+                                        <td class="table__directory">
+                                            <span>Справочник</span>
+                                            <img src="img/icon-directory.png" alt="Иконка карандаша" />
+                                        </td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Количество</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">560</span>
+                                        </td>
+                                        <td>1007</td>
+                                        <td>Число</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Описание</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">570</span>
+                                        </td>
+                                        <td>1008</td>
+                                        <td>Текст</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="table__left-text">
+                                            <img src="img/icon-dots.png" alt="Иконка Три точки" />
+                                            <span>Количество</span>
+                                            <img src="img/icon-pencil.png" alt="Иконка карандаша" />
+                                        </th>
+                                        <td></td>
+                                        <td>
+                                            <span class="table__sort">580</span>
+                                        </td>
+                                        <td>1009</td>
+                                        <td>Число</td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox1" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox2" /></td>
+                                        <td><input type="checkbox" class="table__checkbox" id="checkbox3" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <button class="button__wrapper button__wrapper_settings" id="open-popup">
+                                <svg width="13" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 .5h3v13H5V.5z" fill="#fff" />
+                                    <path d="M13 5.5v3H0v-3h13z" fill="#fff" />
+                                </svg>
+                                <span class="button__text">Добавить поле</span>
+                            </button>
+
+                            <div class="popup" id="popup-create">
+                                <div class="popup__content">
+                                    <h2 class="popup__title">Создать локацию</h2>
+                                    <div class="popup__form">
+                                        <input type="text" class="popup__input" placeholder="Название" />
+                                        <input type="text" class="popup__input" placeholder="Штрихкод" />
+                                        <input type="text" class="popup__input" placeholder="RFID" />
+                                        <div class="popup__select-form">
+                                            <select class="popup__select_wrap">
+                                                <option value="" hidden>Вложенность</option>
+                                                <option value="1">Вложенность 1</option>
+                                                <option value="2">Вложенность 2</option>
+                                                <option value="3">Вложенность 3</option>
+                                            </select>
+                                            <div class="popup__arrow"></div>
+                                        </div>
+                                    </div>
+                                    <div class="popup__options">
+                                        <div class="popup__option">
+                                            <span class="popup__label">Виртуальная локация</span>
+                                            <label class="popup__switch">
+                                                <input type="checkbox" />
+                                                <span class="popup__slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="popup__option">
+                                            <span class="popup__label">Локация для утерь</span>
+                                            <label class="popup__switch">
+                                                <input type="checkbox" />
+                                                <span class="popup__slider"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="popup__buttons">
+                                        <button class="button__wrapper button__wrapper_popup" id="new-popup">
+                                            <img src="img/icon-save.png" alt="Иконка Сохранения" />
+                                            <span class="button__text">Сохранить</span>
+                                        </button>
+                                        <button class="button__wrapper button__wrapper_popup button__wrapper_popup_cancel" id="close-popup">
+                                            <span class="button__text">Отменить</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="popup__change" id="popup-change">
+                                <div class="popup__content">
+                                    <h2 class="popup__title">Изменить локацию "название"</h2>
+                                    <div class="popup__form">
+                                        <div class="popup__label-wrap">
+                                            <label for="location-name">Локация:</label>
+                                            <input type="text" id="location-name" class="popup__input" placeholder="Локация 11" />
+                                        </div>
+                                        <div class="popup__label-wrap">
+                                            <label for="code">Штрихкод:</label>
+                                            <input type="text" id="code" class="popup__input" placeholder="1123123123123" />
+                                        </div>
+                                        <div class="popup__label-wrap">
+                                            <label for="rfid">RFID:</label>
+                                            <input type="text" id="rfid" class="popup__input" placeholder="1123123123123" />
+                                        </div>
+                                        <div class="popup__select-form popup__select-form_change popup__label-wrap">
+                                            <label for="nested">Вложенность:</label>
+                                            <select id="nested" class="popup__select_wrap">
+                                                <option value="" hidden>Вложенность</option>
+                                                <option value="1">Локация1</option>
+                                                <option value="2">Вложенность 2</option>
+                                                <option value="3">Вложенность 3</option>
+                                            </select>
+                                            <div class="popup__arrow popup__arrow_change"></div>
+                                        </div>
+                                    </div>
+                                    <div class="popup__options">
+                                        <div class="popup__option">
+                                            <span class="popup__label">Виртуальная локация</span>
+                                            <label class="popup__switch">
+                                                <input type="checkbox" />
+                                                <span class="popup__slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="popup__option">
+                                            <span class="popup__label">Локация для утерь</span>
+                                            <label class="popup__switch">
+                                                <input type="checkbox" />
+                                                <span class="popup__slider"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="popup__buttons">
+                                        <button class="button__wrapper button__wrapper_popup button__wrapper_delete">
+                                            <svg width="13" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.044.843l2.121 2.121-9.192 9.192-2.121-2.12L10.044.842z" fill="#FF4545" />
+                                                <path d="M12.165 10.035l-2.121 2.121L.852 2.964 2.972.843l9.193 9.192z" fill="#FF4545" />
+                                            </svg>
+                                            <span class="button__text">Удалить</span>
+                                        </button>
+                                        <button class="button__wrapper button__wrapper_popup button__wrapper_popup_cancel" id="close-popup-change">
+                                            <span class="button__text">Отменить</span>
+                                        </button>
+                                    </div>
+                                    <button class="button__wrapper button__wrapper_save button__wrapper_popup">
+                                        <img src="img/icon-save.png" alt="Иконка Сохранения" />
+                                        <span class="button__text">Сохранить</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="footer__wrap container">
+                    <div class="footer__center">
+                        <p class="footer__text">Последний приём 20.09.2021 18:36:21</p>
+                        <p class="footer__text">Последняя передача 20.09.2021 18:38:21</p>
+                    </div>
+                    <div class="footer__right">
+                        <img src="img/icon-documentation.png" class="footer__icon" />
+                        <a href="#" class="footer__link">Документация</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="scripts/aside.js"></script>
+        <script src="scripts/popup.js"></script>
+    </body>
+</html>
